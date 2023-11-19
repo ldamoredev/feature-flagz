@@ -1,0 +1,7 @@
+{
+  "extends": "@feature-flagz/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false
+  },
+  "include": ["src", "test"]
+}

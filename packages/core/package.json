@@ -1,0 +1,45 @@
+{
+  "name": "@feature-flagz/core",
+  "version": "0.1.0",
+  "description": "SDK for feature flagz",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "browser": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "author": "Lautaro Damore <lauti.damore@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "keywords": [
+    "feature flags"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "yarn run -T jest",
+    "lint": "yarn run -T eslint ./src && yarn run -T tsc --noEmit",
+    "check-all": "yarn lint && yarn test"
+  },
+  "devDependencies": {
+    "@feature-flagz/jest-config": "workspace:^",
+    "@feature-flagz/typescript-config": "workspace:^",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "rollup": "^3.27.2",
+    "rollup-plugin-dts": "^5.3.1",
+    "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../../../../core/src/index.ts"],"sourcesContent":["export class Sample {\n    method() {\n        console.log('sample')\n    }\n}\n"],"names":["Sample","method","console","log"],"mappings":"MAAaA,OACT,MAAAC,GACIC,QAAQC,IAAI,SACf"}

@@ -1,0 +1,13 @@
+{
+  "name": "@feature-flagz/jest-config",
+  "version": "0.1.0",
+  "description": "Jest configuration for feature flagz packages.",
+  "main": "jest-config.js",
+  "dependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/jest": "^29.5.3",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "jest-extended": "^3.2.4"
+  }
+}

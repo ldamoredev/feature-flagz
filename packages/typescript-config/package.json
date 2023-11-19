@@ -1,0 +1,5 @@
+{
+  "name": "@feature-flagz/typescript-config",
+  "version": "0.1.0",
+  "description": "A base TSConfig for feature flagz packages."
+}

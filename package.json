@@ -1,0 +1,33 @@
+{
+  "name": "feature-flagz",
+  "packageManager": "yarn@4.0.2",
+  "scripts": {
+    "check-all": "lerna run lint && lerna run test",
+    "clean:dist": "lerna exec -- npx rimraf dist",
+    "clean": "yarn clean:dist && lerna clean --yes && npx rimraf .cache && npx rimraf node_modules",
+    "build": "lerna run build",
+    "build:ci": "NX_REJECT_UNKNOWN_LOCAL_CACHE=0 yarn build",
+    "release": "lerna publish --no-private"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**/*"
+    ]
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "lerna": "^7.1.0"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.7.2",
+    "eslint": "^8.51.0",
+    "jest": "^29.5.0",
+    "jest-each": "^29.5.0",
+    "jest-extended": "^3.2.4",
+    "typescript": "^5.2.2"
+  }
+}
