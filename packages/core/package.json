@@ -8,10 +8,10 @@
   "types": "dist/types/index.d.ts",
   "author": "Lautaro Damore <lauti.damore@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com",
+  "homepage": "https://github.com/ldamoredev/feature-flagz",
   "repository": {
     "type": "git",
-    "url": "https://github.com"
+    "url": "https://github.com/ldamoredev/feature-flagz"
   },
   "keywords": [
     "feature flags"
