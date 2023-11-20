@@ -37,6 +37,6 @@ jobs:
       - name: Publish to npm
         run: |
           cd packages/core
-          yarn npm publish
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
