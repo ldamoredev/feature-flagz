@@ -1,6 +1,6 @@
 {
   "name": "@feature-flagz/jest-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Jest configuration for feature flagz packages.",
   "main": "jest-config.js",
   "dependencies": {
