@@ -35,8 +35,6 @@ jobs:
       - name: Build
         run: yarn run build:ci
       - name: Publish to npm
-        run: |
-          cd packages/core
-          npm publish --access public
+        run: lerna release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
