@@ -6,7 +6,7 @@
     "clean:dist": "lerna exec -- npx rimraf dist",
     "clean": "yarn clean:dist && lerna clean --yes && npx rimraf .cache && npx rimraf node_modules",
     "build": "lerna run build",
-    "build:ci": "NX_REJECT_UNKNOWN_LOCAL_CACHE=0 yarn build",
+    "build:ci": "NX_REJECT_UNKNOWN_LOCAL_CACHE=0 yarn build"
   },
   "workspaces": {
     "packages": [
