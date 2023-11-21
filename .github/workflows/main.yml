@@ -39,7 +39,7 @@ jobs:
           cd packages/feature-flagz-core
           npm publish --access public
           cd ..
-          cd packages/feature-flagz-react
+          cd feature-flagz-react
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
