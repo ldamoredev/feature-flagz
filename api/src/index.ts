@@ -1,11 +1,6 @@
-import express from 'express'
+import { App } from './http/App'
+import { StatusController } from './http/controllers/StatusController'
 
-const app = express()
-
-app.get('/', function(req, res) {
-    res.send('hello world')
-})
-
-app.listen(3008, () => {
-    console.log(`Example app listening on port ${3008}`)
-})
+const app = new App()
+app.registerController(new StatusController())
+app.start(300)
